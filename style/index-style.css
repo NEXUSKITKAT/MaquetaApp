@@ -1,0 +1,148 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f5f5f5;
+}
+
+.container {
+	max-width: 400px;
+	margin: 0 auto;
+	padding: 16px;
+	background-color: white;
+	overflow: hidden;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+	margin: 16px 0;
+	font-size: 18px;
+}
+
+.section {
+	margin-bottom: 24px;
+}
+
+.section-title {
+	font-size: 16px;
+	color: #333;
+	margin-bottom: 8px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.section-title a {
+	font-size: 14px;
+	color: #007bff;
+	text-decoration: none;
+}
+
+.card-container {
+	display: flex;
+	overflow-x: auto;
+}
+
+.card {
+	flex: 0 0 120px;
+	margin-right: 8px;
+	background-color: #eee;
+	border-radius: 8px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.card img {
+	width: 100%;
+	height: auto;
+}
+
+.card-title {
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+	margin: 8px 4px 4px;
+}
+
+.card-description {
+	font-size: 12px;
+	color: #666;
+	margin: 0 4px 8px;
+}
+
+.audio-guide {
+	display: flex;
+	align-items: center;
+	margin-bottom: 16px;
+}
+
+.audio-guide img {
+	width: 80px;
+	height: 80px;
+	border-radius: 8px;
+	margin-right: 12px;
+}
+
+.audio-info {
+	flex-grow: 1;
+}
+
+.audio-title {
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+}
+
+.audio-description {
+	font-size: 12px;
+	color: #666;
+}
+
+.visited-places {
+	display: flex;
+	overflow-x: auto;
+}
+
+.visited-card {
+	flex: 0 0 80px;
+	margin-right: 8px;
+	text-align: center;
+}
+
+.visited-card img {
+	width: 100%;
+	border-radius: 8px;
+}
+
+.visited-title {
+	font-size: 12px;
+	color: #333;
+	margin-top: 4px;
+}
+/* Bottom Navigation */
+.bottom-nav {
+	display: flex;
+	justify-content: space-around;
+	padding: 12px 0;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	max-width: 400px; /* Limits the width to match the main container */
+	background-color: #fff;
+	box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
+	margin: 0 auto; /* Centers the navigation */
+	left: 0; /* Aligns the navbar to the center */
+	right: 0; /* Ensures it's centered */
+	}
+	
+	.bottom-nav a{
+	background: none;
+	border: none;
+	color: #555;
+	font-size: 14px;
+	cursor: pointer;
+	}
+	
+	.bottom-nav a.active {
+	color: #673ab7;
+	}

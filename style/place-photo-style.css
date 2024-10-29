@@ -1,0 +1,169 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body, html {
+	font-family: Arial, sans-serif;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f2f2f2;
+}
+
+.container {
+	width: 100%;
+	max-width: 400px;
+	height: 100vh;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+	width: 100%;
+	height: 200px;
+	background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/3a/Denia_castle_01.JPG'); /* Imagen de ejemplo */
+	background-size: cover;
+	background-position: center;
+}
+
+.header {
+	padding: 15px;
+	text-align: center;
+	color: black;
+	font-size: 24px;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: relative;
+	top: 10px;
+}
+
+.button-container {
+	display: flex;
+	justify-content: space-around;
+	padding: 10px 0;
+	position: relative;
+	top: 15px;
+}
+
+.button {
+	background-color: #d1e7dd;
+	color: #0f5132;
+	padding: 8px 15px;
+	border-radius: 15px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	width: 45%;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button i {
+	margin-right: 5px;
+}
+
+.info-container {
+	padding: 20px;
+	flex-grow: 1;
+	overflow-y: auto;
+}
+
+.info-title {
+	font-size: 18px;
+	font-weight: bold;
+	color: #4a4a4a;
+	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.info-title i {
+	margin-right: 10px;
+}
+
+.tabs {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 15px;
+}
+
+.tab {
+	padding: 8px 20px;
+	border-radius: 10px;
+	background-color: #f8f9fa;
+	color: #6c757d;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	text-align: center;
+	width: 45%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.tab.active {
+	background-color: #6c757d;
+	color: white;
+}
+
+.tab i {
+	margin-right: 5px;
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+	margin-top: 15px;
+}
+
+.gallery img {
+	width: 100%;
+	border-radius: 10px;
+	object-fit: cover;
+}
+
+.see-more {
+	color: #6c757d;
+	text-align: center;
+	font-size: 14px;
+	margin-top: 15px;
+	margin-bottom: 50px;
+	cursor: pointer;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+	display: flex;
+	justify-content: space-around;
+	padding: 12px 0;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	max-width: 400px; /* Limits the width to match the main container */
+	background-color: #fff;
+	box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
+	margin: 0 auto; /* Centers the navigation */
+	left: 0; /* Aligns the navbar to the center */
+	right: 0; /* Ensures it's centered */
+}
+
+.bottom-nav a {
+	background: none;
+	border: none;
+	color: #555;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.bottom-nav a.active {
+	color: #673ab7;
+}
